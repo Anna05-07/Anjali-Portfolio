@@ -1,0 +1,43 @@
+# Personal Portfolio Website - HTML Only
+# Internship Task Requirements
+
+## PROJECT SPECIFICATIONS
+- Create index.html with proper HTML5 structure
+- Add at least 3 sections: About, Skills, Contact
+- Use semantic HTML tags (header, nav, main, footer)
+- Include a working contact form
+- Add images and proper alt text
+- Implement internal navigation links
+
+## TECHNICAL REQUIREMENTS
+- No CSS allowed (pure HTML only)
+- No JavaScript allowed
+- Must use semantic HTML5 elements
+- Must be valid HTML
+- Must include accessibility features
+
+## FILE REQUIREMENTS
+1. index.html (main portfolio file)
+2. README.md (documentation)
+3. images/ folder (contains all images)
+4. requirements.txt (this file)
+
+## VALIDATION CRITERIA
+- All required sections present
+- Semantic elements used correctly
+- Contact form has required fields
+- Images have descriptive alt text
+- Navigation links work properly
+- Code is properly formatted
+
+## SUBMISSION FORMAT
+- Zip file containing all files
+- Or GitHub repository link
+- All files must be in root folder
+- Images must be in images/ folder
+
+## NOTES
+- This is an HTML-only assessment
+- Focus is on structure and semantics
+- Styling will be added in later phases
+- Form submission is front-end only

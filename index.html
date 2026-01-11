@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal Portfolio Website - HTML Only">
+    <meta name="author" content="ANJALI">
+    <title>ANJALI | Portfolio</title>
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header>
+        <h1>ANJALI</h1>
+        <p>Aspiring Web Developer</p>
+        
+        <!-- Navigation Menu -->
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- About Section -->
+        <section id="about">
+            <h2>About Me</h2>
+            
+            <!-- Profile Image -->
+            <img src="images/profile.jpg" 
+                 alt="ANJALI - Professional headshot" 
+                 width="200" 
+                 height="200">
+            
+            <p>Hello! My name is <strong>ANJALI</strong>. I am a passionate web development enthusiast currently learning HTML, CSS, and JavaScript.</p>
+            
+            <p>I believe in creating simple, accessible, and user-friendly websites. This portfolio demonstrates my understanding of HTML5 fundamentals.</p>
+            
+            <h3>My Background</h3>
+            <p>I started my coding journey recently and have been learning through online courses, tutorials, and hands-on projects like this one.</p>
+            
+            <h3>My Interests</h3>
+            <ul>
+                <li>Web Development</li>
+                <li>User Experience Design</li>
+                <li>Responsive Web Design</li>
+                <li>Accessibility</li>
+            </ul>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills">
+            <h2>My Skills</h2>
+            
+            <h3>Technical Skills</h3>
+            <table border="1" width="100%">
+                <thead>
+                    <tr>
+                        <th>Skill</th>
+                        <th>Level</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>HTML5</td>
+                        <td>Advanced</td>
+                        <td>Semantic HTML, Forms, Tables, Accessibility</td>
+                    </tr>
+                    <tr>
+                        <td>CSS3</td>
+                        <td>Intermediate</td>
+                        <td>Basic styling, Layouts, Responsive Design</td>
+                    </tr>
+                    <tr>
+                        <td>JavaScript</td>
+                        <td>Beginner</td>
+                        <td>DOM Manipulation, Basic Functions</td>
+                    </tr>
+                    <tr>
+                        <td>Git & GitHub</td>
+                        <td>Intermediate</td>
+                        <td>Version Control, Collaboration</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Learning Progress</h3>
+            <ol>
+                <li>HTML Fundamentals ✓</li>
+                <li>CSS Styling (In Progress)</li>
+                <li>JavaScript Basics (Next)</li>
+                <li>Responsive Design</li>
+                <li>Portfolio Projects</li>
+            </ol>
+
+            <h3>Soft Skills</h3>
+            <ul>
+                <li>Problem Solving</li>
+                <li>Communication</li>
+                <li>Teamwork</li>
+                <li>Time Management</li>
+                <li>Attention to Detail</li>
+            </ul>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact Me</h2>
+            
+            <h3>Contact Information</h3>
+            <address>
+                <p><strong>Email:</strong> <a href="1201detective@gmail.com">1201detective@gmail.com</a></p>
+                <p><strong>Phone:</strong>817-----08</p>
+                <p><strong>Location:</strong> Delhi, Delhi</p>
+            </address>
+
+            <h3>Send a Message</h3>
+            <form action="#" method="POST">
+                <fieldset>
+                    <legend>Contact Form</legend>
+                    
+                    <!-- Name Field -->
+                    <p>
+                        <label for="name"><strong>Full Name:</strong></label><br>
+                        <input type="text" 
+                               id="name" 
+                               name="name" 
+                               placeholder="Enter your full name"
+                               required 
+                               size="50">
+                    </p>
+                    
+                    <!-- Email Field -->
+                    <p>
+                        <label for="email"><strong>Email Address:</strong></label><br>
+                        <input type="email" 
+                               id="email" 
+                               name="email" 
+                               placeholder="your.email@example.com"
+                               required 
+                               size="50">
+                    </p>
+                    
+                    <!-- Subject Field -->
+                    <p>
+                        <label for="subject"><strong>Subject:</strong></label><br>
+                        <select id="subject" name="subject" required>
+                            <option value="" selected disabled>Select a subject</option>
+                            <option value="internship">Internship Opportunity</option>
+                            <option value="project">Project Collaboration</option>
+                            <option value="question">Question</option>
+                            <option value="feedback">Feedback</option>
+                        </select>
+                    </p>
+                    
+                    <!-- Message Field -->
+                    <p>
+                        <label for="message"><strong>Your Message:</strong></label><br>
+                        <textarea id="message" 
+                                  name="message" 
+                                  rows="6" 
+                                  cols="50"
+                                  placeholder="Type your message here..."
+                                  required></textarea>
+                    </p>
+                    
+                    <!-- Submit Button -->
+                    <p>
+                        <button type="submit">Send Message</button>
+                        <button type="reset">Clear Form</button>
+                    </p>
+                </fieldset>
+            </form>
+            
+            <h3>Connect With Me</h3>
+            <ul>
+                <li><a href="https://linkedin.com/in/Anjali anjali" target="_blank">LinkedIn</a></li>
+                <li><a href="https://github.com/Anna05-07" target="_blank">GitHub</a></li>
+                <li><a href="https://twitter.com/yourusername" target="_blank">Twitter</a></li>
+            </ul>
+        </section>
+        
+        <!-- Projects Section (Bonus) -->
+        <section id="projects">
+            <h2>My Projects</h2>
+            
+            <article>
+                <h3>Portfolio Website</h3>
+                <p><strong>Technologies:</strong> HTML5</p>
+                <p>This very website! Built using pure HTML5 with semantic elements and proper structure.</p>
+                <img src="images/portfolio-screenshot.jpg" 
+                     alt="Screenshot of portfolio website" 
+                     width="300"
+                     height="200">
+            </article>
+            
+            <article>
+                <h3>Recipe Website</h3>
+                <p><strong>Technologies:</strong> HTML, CSS</p>
+                <p>A simple recipe website with ingredients lists and cooking instructions.</p>
+            </article>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <hr>
+        <p><strong>Contact Information:</strong></p>
+        <address>
+            Email: <a href="mailto:your.email@example.com">1201detective@gmail.com</a><br>
+            Phone: 817-----08
+        </address>
+        
+        <p><strong>Quick Links:</strong></p>
+        <nav>
+            <a href="#about">About</a> | 
+            <a href="#skills">Skills</a> | 
+            <a href="#contact">Contact</a> | 
+            <a href="#projects">Projects</a>
+        </nav>
+        
+        <p>
+            <small>
+                &copy; 2026 ANJALI. All rights reserved.<br>
+                This website is built with pure HTML5.
+            </small>
+        </p>
+        
+        <p>
+            <a href="#top">Back to Top ↑</a>
+        </p>
+    </footer>
+</body>
+</html>
