@@ -41,3 +41,78 @@
 - Focus is on structure and semantics
 - Styling will be added in later phases
 - Form submission is front-end only
+
+================================================================================
+## PHASE 2: CSS STYLING REQUIREMENTS (NEXT PHASE)
+================================================================================
+
+## PROJECT OVERVIEW
+After completing the HTML-only structure, Phase 2 focuses on adding CSS styling to enhance visual appeal while maintaining semantic structure.
+
+## CSS REQUIREMENTS
+### Mandatory:
+- Create `style.css` file with all CSS rules
+- Link CSS file to HTML using `<link>` tag in `<head>`
+- Use external CSS only (no inline or internal styles)
+- Implement responsive design with at least 2 breakpoints
+- Use CSS Grid or Flexbox for layouts
+- Include hover effects for interactive elements
+- Ensure color contrast meets accessibility standards
+
+### CSS Features to Implement:
+1. **Layout & Structure**
+   - Responsive grid/flexbox layouts
+   - Proper spacing (padding/margin)
+   - Consistent alignment
+
+2. **Typography**
+   - Web-safe fonts or Google Fonts
+   - Font hierarchy (h1 > h2 > h3)
+   - Readable line height and spacing
+
+3. **Colors & Visual Design**
+   - Consistent color palette
+   - Background colors/images
+   - Hover states for links/buttons
+
+4. **Components**
+   - Navigation menu styling
+   - Form input styling
+   - Button styles
+   - Table styling
+
+5. **Responsive Design**
+   - Mobile-first approach
+   - Media queries for different screens
+   - Flexible images
+
+## FILE REQUIREMENTS (PHASE 2)
+1. `style.css` (main stylesheet)
+2. Updated `index.html` (with CSS link)
+3. Updated `README.md` (document CSS features)
+
+## VALIDATION CRITERIA (PHASE 2)
+- CSS file is properly linked
+- Website is fully responsive
+- Colors have sufficient contrast
+- Layout doesn't break on different screens
+- Hover/focus states work properly
+- Code is well-organized and commented
+
+## BROWSER COMPATIBILITY
+- Chrome (latest version)
+- Firefox (latest version)
+- Mobile browsers
+
+## ACCESSIBILITY REQUIREMENTS
+- Maintain semantic HTML structure
+- Ensure keyboard navigation
+- Provide color contrast
+- Include focus indicators
+
+## SUBMISSION FORMAT (PHASE 2)
+- GitHub repository with all files
+- Or updated zip file including CSS
+- Live demo link (optional but recommended)
+
+## FOLDER STRUCTURE (PHASE 2)
