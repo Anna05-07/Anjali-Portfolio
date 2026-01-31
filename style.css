@@ -115,32 +115,262 @@ section:last-of-type {
     border-bottom: none;
 }
 
-/* ====== ABOUT SECTION ====== */
-#about img {
+/* ====== ENHANCED ABOUT SECTION ====== */
+
+/* Profile Image Styling */
+.profile-img {
     float: left;
     margin: 0 1.5rem 1rem 0;
     border-radius: 50%;
     border: 5px solid #3498db;
-    box-shadow: 0 4px 10px rgba(52, 152, 219, 0.3);
+    box-shadow: 0 4px 20px rgba(52, 152, 219, 0.3);
     width: 200px;
     height: 200px;
     object-fit: cover;
+    transition: all 0.3s ease;
 }
 
-#about ul {
-    list-style-type: none;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    margin-top: 1rem;
+.profile-img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(52, 152, 219, 0.4);
 }
 
-#about li {
-    background-color: #ecf0f1;
-    padding: 0.5rem 1rem;
-    border-radius: 20px;
-    font-weight: 500;
+/* Typography Enhancements */
+.intro {
+    font-size: 1.2rem;
+    line-height: 1.8;
     color: #2c3e50;
+    margin-bottom: 1.5rem;
+}
+
+.highlight {
+    color: #3498db;
+    font-size: 1.3em;
+    text-shadow: 0 2px 4px rgba(52, 152, 219, 0.1);
+}
+
+.tech {
+    background: linear-gradient(135deg, #3498db, #2c3e50);
+    color: white;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-weight: 600;
+    margin: 0 3px;
+    font-size: 0.9em;
+}
+
+.philosophy {
+    background-color: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 10px;
+    border-left: 4px solid #2c3e50;
+    font-style: italic;
+    margin: 1.5rem 0;
+    line-height: 1.7;
+}
+
+/* Portfolio Showcase */
+.portfolio-showcase {
+    background: linear-gradient(135deg, #ebf5fb, #e8f4fc);
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin: 1.5rem 0;
+    border: 1px solid #d6eaf8;
+}
+
+.tech-stack {
+    list-style: none;
+    margin: 1rem 0 0 0;
+    padding: 0;
+}
+
+.tech-stack li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #d6eaf8;
+}
+
+.tech-stack li:last-child {
+    border-bottom: none;
+}
+
+/* Background Card */
+.background-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    margin: 1.5rem 0;
+    border-top: 5px solid #3498db;
+}
+
+/* Timeline */
+.learning-timeline {
+    margin: 1.5rem 0;
+    position: relative;
+}
+
+.learning-timeline::before {
+    content: '';
+    position: absolute;
+    left: 20px;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background: #3498db;
+    border-radius: 3px;
+}
+
+.timeline-item {
+    position: relative;
+    padding-left: 50px;
+    margin-bottom: 1.5rem;
+}
+
+.timeline-item:last-child {
+    margin-bottom: 0;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: 16px;
+    top: 5px;
+    width: 12px;
+    height: 12px;
+    background: white;
+    border: 3px solid #3498db;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.timeline-date {
+    display: inline-block;
+    background: #3498db;
+    color: white;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+/* Passion Section */
+.passion-section {
+    margin: 2rem 0;
+}
+
+.core-principles {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin: 1.5rem 0;
+}
+
+.principle {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+    border: 1px solid #eee;
+    transition: transform 0.3s ease;
+}
+
+.principle:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.principle h4 {
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+/* Interests Grid */
+.interests-grid {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin: 1.5rem 0;
+    padding: 0;
+}
+
+.interest-item {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    border: 1px solid #e8f4fc;
+    transition: all 0.3s ease;
+}
+
+.interest-item:hover {
+    background: linear-gradient(135deg, #f8f9fa, #e8f4fc);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(52, 152, 219, 0.1);
+}
+
+.interest-icon {
+    font-size: 2rem;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.interest-item strong {
+    display: block;
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.interest-item p {
+    color: #666;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+/* Call to Action */
+.call-to-action {
+    text-align: center;
+    padding: 2rem;
+    margin: 2rem 0;
+    background: linear-gradient(135deg, #2c3e50, #3498db);
+    color: white;
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+}
+
+.call-to-action::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M0,0 L100,0 L100,100 Z" fill="rgba(255,255,255,0.1)"/></svg>');
+    background-size: cover;
+}
+
+.call-to-action p {
+    position: relative;
+    z-index: 1;
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.cta-link {
+    color: #f1c40f;
+    text-decoration: none;
+    font-weight: 600;
+    border-bottom: 2px solid #f1c40f;
+    padding-bottom: 2px;
+    transition: all 0.3s ease;
+}
+
+.cta-link:hover {
+    color: #ffffff;
+    border-bottom-color: #ffffff;
 }
 
 /* ====== SKILLS SECTION ====== */
@@ -423,7 +653,7 @@ footer a[href="#top"]:hover {
         padding: 1.5rem;
     }
     
-    #about img {
+    .profile-img {
         float: none;
         display: block;
         margin: 0 auto 1.5rem;
@@ -453,6 +683,36 @@ footer a[href="#top"]:hover {
         display: block;
         width: 100%;
         margin-bottom: 1rem;
+    }
+    
+    /* Responsive Design for About Section */
+    .intro {
+        font-size: 1.1rem;
+    }
+    
+    .core-principles {
+        grid-template-columns: 1fr;
+    }
+    
+    .interests-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .learning-timeline::before {
+        left: 15px;
+    }
+    
+    .timeline-item {
+        padding-left: 40px;
+    }
+    
+    .call-to-action {
+        padding: 1.5rem;
+        margin: 1.5rem 0;
+    }
+    
+    .call-to-action p {
+        font-size: 1.1rem;
     }
 }
 
@@ -492,4 +752,48 @@ footer a[href="#top"]:hover {
         font-size: 0.9em;
         font-weight: normal;
     }
+}
+
+/* ====== DARK MODE SUPPORT ====== */
+.dark-mode .philosophy {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+}
+
+.dark-mode .portfolio-showcase {
+    background: linear-gradient(135deg, #34495e, #2c3e50);
+    border-color: #34495e;
+}
+
+.dark-mode .background-card {
+    background: #2c3e50;
+    color: #ecf0f1;
+}
+
+.dark-mode .principle {
+    background: #34495e;
+    border-color: #4a6572;
+    color: #ecf0f1;
+}
+
+.dark-mode .principle h4 {
+    color: #3498db;
+}
+
+.dark-mode .interest-item {
+    background: #34495e;
+    border-color: #4a6572;
+    color: #ecf0f1;
+}
+
+.dark-mode .interest-item:hover {
+    background: linear-gradient(135deg, #2c3e50, #34495e);
+}
+
+.dark-mode .interest-item strong {
+    color: #3498db;
+}
+
+.dark-mode .interest-item p {
+    color: #bdc3c7;
 }
