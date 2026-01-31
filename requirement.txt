@@ -1,28 +1,36 @@
-# Personal Portfolio Website - HTML Only
-# Internship Task Requirements
+# ===============================================================================
+# PERSONAL PORTFOLIO WEBSITE - COMPLETE PROJECT REQUIREMENTS
+# ===============================================================================
+# This document outlines the requirements for building a complete portfolio website
+# across three phases: HTML Structure, CSS Styling, and JavaScript Functionality
+# ===============================================================================
+
+# ===============================================================================
+# PHASE 1: HTML STRUCTURE
+# ===============================================================================
 
 ## PROJECT SPECIFICATIONS
 - Create index.html with proper HTML5 structure
 - Add at least 3 sections: About, Skills, Contact
-- Use semantic HTML tags (header, nav, main, footer)
+- Use semantic HTML tags (header, nav, main, footer, section, article)
 - Include a working contact form
-- Add images and proper alt text
+- Add images with proper alt text
 - Implement internal navigation links
 
-## TECHNICAL REQUIREMENTS
+## TECHNICAL REQUIREMENTS (PHASE 1)
 - No CSS allowed (pure HTML only)
 - No JavaScript allowed
 - Must use semantic HTML5 elements
 - Must be valid HTML
 - Must include accessibility features
 
-## FILE REQUIREMENTS
+## FILE REQUIREMENTS (PHASE 1)
 1. index.html (main portfolio file)
 2. README.md (documentation)
 3. images/ folder (contains all images)
 4. requirements.txt (this file)
 
-## VALIDATION CRITERIA
+## VALIDATION CRITERIA (PHASE 1)
 - All required sections present
 - Semantic elements used correctly
 - Contact form has required fields
@@ -30,66 +38,57 @@
 - Navigation links work properly
 - Code is properly formatted
 
-## SUBMISSION FORMAT
-- Zip file containing all files
-- Or GitHub repository link
-- All files must be in root folder
-- Images must be in images/ folder
-
-## NOTES
-- This is an HTML-only assessment
-- Focus is on structure and semantics
-- Styling will be added in later phases
-- Form submission is front-end only
-
-================================================================================
-## PHASE 2: CSS STYLING REQUIREMENTS (NEXT PHASE)
-================================================================================
-
-## PROJECT OVERVIEW
-After completing the HTML-only structure, Phase 2 focuses on adding CSS styling to enhance visual appeal while maintaining semantic structure.
+# ===============================================================================
+# PHASE 2: CSS STYLING
+# ===============================================================================
 
 ## CSS REQUIREMENTS
 ### Mandatory:
-- Create `style.css` file with all CSS rules
-- Link CSS file to HTML using `<link>` tag in `<head>`
+- Create style.css file with all CSS rules
+- Link CSS file to HTML using <link> tag in <head>
 - Use external CSS only (no inline or internal styles)
 - Implement responsive design with at least 2 breakpoints
 - Use CSS Grid or Flexbox for layouts
 - Include hover effects for interactive elements
-- Ensure color contrast meets accessibility standards
+- Ensure color contrast meets accessibility standards (WCAG AA)
 
 ### CSS Features to Implement:
-1. **Layout & Structure**
+1. Layout & Structure
    - Responsive grid/flexbox layouts
    - Proper spacing (padding/margin)
-   - Consistent alignment
+   - Consistent alignment across sections
+   - Card-based design for projects
 
-2. **Typography**
+2. Typography
    - Web-safe fonts or Google Fonts
-   - Font hierarchy (h1 > h2 > h3)
-   - Readable line height and spacing
+   - Font hierarchy (h1 > h2 > h3 > p)
+   - Readable line height (1.5-1.8) and spacing
+   - Responsive font sizes
 
-3. **Colors & Visual Design**
+3. Colors & Visual Design
    - Consistent color palette
-   - Background colors/images
+   - Background colors/images with proper contrast
+   - Gradient effects
    - Hover states for links/buttons
+   - Box shadows and borders for depth
 
-4. **Components**
-   - Navigation menu styling
-   - Form input styling
-   - Button styles
-   - Table styling
+4. Components
+   - Navigation menu styling with active states
+   - Form input styling with focus states
+   - Button styles with hover/active states
+   - Table styling with zebra striping
+   - Card design for project sections
 
-5. **Responsive Design**
+5. Responsive Design
    - Mobile-first approach
-   - Media queries for different screens
-   - Flexible images
+   - Media queries for mobile, tablet, desktop
+   - Flexible images with max-width: 100%
+   - Stacked layouts on mobile, multi-column on desktop
 
 ## FILE REQUIREMENTS (PHASE 2)
-1. `style.css` (main stylesheet)
-2. Updated `index.html` (with CSS link)
-3. Updated `README.md` (document CSS features)
+1. style.css (main stylesheet)
+2. Updated index.html (with CSS link)
+3. Updated README.md (document CSS features)
 
 ## VALIDATION CRITERIA (PHASE 2)
 - CSS file is properly linked
@@ -110,9 +109,78 @@ After completing the HTML-only structure, Phase 2 focuses on adding CSS styling 
 - Provide color contrast
 - Include focus indicators
 
-## SUBMISSION FORMAT (PHASE 2)
-- GitHub repository with all files
-- Or updated zip file including CSS
-- Live demo link (optional but recommended)
+# ===============================================================================
+# PHASE 3: JAVASCRIPT FUNCTIONALITY
+# ===============================================================================
 
-## FOLDER STRUCTURE (PHASE 2)
+## JAVASCRIPT REQUIREMENTS
+### Mandatory:
+- Create script.js file with all JavaScript code
+- Link JavaScript file before closing </body> tag
+- Use vanilla JavaScript (no external libraries/frameworks)
+- Implement at least 5 interactive features
+- Handle form validation with user feedback
+- Use Local Storage for user preferences
+- Include error handling and fallbacks
+
+### JavaScript Features to Implement:
+1. Form Validation & Submission
+   - Real-time form validation with error messages
+   - Email format validation using regex
+   - Character length validation for messages
+   - Success/error feedback to users
+   - Form reset functionality
+
+2. Interactive UI Components
+   - Dark/light mode toggle with Local Storage
+   - Smooth scrolling navigation
+   - Back-to-top button with fade effect
+   - Mobile menu toggle for small screens
+   - Modal/popup system for project details
+
+3. Dynamic Content
+   - Visitor counter using Local Storage
+   - Project view counter
+   - Dynamic year update in footer
+   - Interactive skill visualization
+
+4. Event Handling
+   - Click events for buttons and links
+   - Form submit event with prevention
+   - Scroll events for animations
+   - Keyboard event handling
+   - Resize events for responsive adjustments
+
+5. Animations & Effects
+   - Scroll-triggered animations
+   - Hover effects with JavaScript enhancements
+   - Page load animations
+   - Smooth transitions between states
+
+## FILE REQUIREMENTS (PHASE 3)
+1. script.js (JavaScript file)
+2. Updated index.html (with script tag)
+3. Updated style.css (additional styles for JS features)
+4. Updated README.md (document JavaScript features)
+
+## VALIDATION CRITERIA (PHASE 3)
+- JavaScript file is properly linked and loads
+- All interactive features work without errors
+- Form validation provides clear feedback
+- Dark mode persists across page reloads
+- Smooth scrolling works for all internal links
+- Mobile menu functions correctly
+- No console errors in development tools
+- Code is well-commented and organized
+
+## FEATURE CHECKLIST (PHASE 3)
+- [ ] Contact form validation
+- [ ] Dark/light mode toggle
+- [ ] Smooth scrolling navigation
+- [ ] Back-to-top button
+- [ ] Mobile menu toggle
+- [ ] Project detail modals
+- [ ] Visitor counter
+- [ ] Dynamic year update
+- [ ] Skill visualization
+- [ ] Scroll animations
